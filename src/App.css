@@ -54,6 +54,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .formulario {
@@ -93,7 +95,7 @@ main {
 .resultadosContainer li {
   border-radius: 0.6rem;
   border: 1px solid #60c7e4;
-  min-width: 13rem;
+  min-width: 11rem;
   padding: 0.4rem 0.8rem;
   margin: 0.4rem;
   transition: all 0.4s;
