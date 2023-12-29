@@ -1,27 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  font-family: Montserrat;
+}
+
+html {
+  background: #f0f7f8;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 8rem;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* @media (prefers-reduced-motion: no-preference) { */
+.logo {
+  animation: App-logo-spin infinite 20s linear;
 }
+
+/* } */
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1rem;
   color: white;
+  padding: 1rem;
 }
 
 .App-link {
@@ -32,7 +44,68 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario {
+  display: grid;
+  align-self: center;
+  gap: 1rem;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.formulario input {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid #acb5b8;
+}
+
+#buscar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+
+
+.resultadosContainer {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline-start: 0px
+}
+
+.resultadosContainer li {
+  border-radius: 0.6rem;
+  border: 1px solid #60c7e4;
+  min-width: 13rem;
+  padding: 0.4rem 0.8rem;
+  margin: 0.4rem;
+  transition: all 0.4s;
+  background: #c3e6f0;
+}
+
+.resultadosContainer li:hover {
+  cursor: pointer;
+  background: #a0d9eb;
+}
+
+.tiempoimg {
+  background: #64b4ca;
+  border-radius: 50%;
 }
