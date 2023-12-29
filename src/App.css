@@ -111,3 +111,37 @@ main {
   background: #64b4ca;
   border-radius: 50%;
 }
+
+table {
+  min-width: 30rem;
+  margin: 20px auto;
+  border-collapse: collapse;
+  margin-bottom: 5rem;
+}
+@media (max-width: 600px) {
+  table {
+    min-width: 0;
+    max-width: 90%; /* Establecer un margen horizontal mínimo de 2rem */
+  }
+}
+
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+footer{
+  font-size: 80%;
+  padding:2rem 0;
+  background: #acb5b8;
+}
+
+a{
+  text-decoration: none;
+  margin-bottom: 5rem;
+}

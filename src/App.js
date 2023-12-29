@@ -1,5 +1,7 @@
 import Header from './Header';
 import Resultados from './Resultados';
+import Tabla from './Tabla';
+import Footer from './Footer';
 import './App.css';
 import CONFIG from './config/config.js';
 import { useState } from "react";
@@ -36,15 +38,15 @@ function App() {
   }
 
   const validarLongitud = (valor, setValor) => {
-    // if (valor >= -90 && valor <= 90) {
-      setValor(valor);
-    // } else {
-    //   if (valor < -90) {
-    //     setValor(-90);
-    //   } else if (valor > 90) {
-    //     setValor(90);
-    //   }
-    // }
+    if (valor >= -90 && valor <= 90) {
+    setValor(valor);
+    } else {
+      if (valor < -90) {
+        setValor(-90);
+      } else if (valor > 90) {
+        setValor(90);
+      }
+    }
   };
 
 
@@ -69,6 +71,9 @@ function App() {
         {result && <Resultados items={result} numitems={CONFIG.num_items} />}
       </main>
 
+      <Tabla />
+
+      <Footer />
     </div>
   );
 }

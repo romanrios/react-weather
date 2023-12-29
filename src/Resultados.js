@@ -4,7 +4,7 @@ export default function Resultados(props) {
         return (
             <div id="resultados">
                 <h2>Resultados</h2>
-                <h3>Timezone: {props.items.timezone}</h3>
+                <h3>Huso horario: {props.items.timezone}</h3>
                 <h4>El tiempo en los próximos días será:</h4>
                 <ul className="resultadosContainer">
                     {itemsSlice.map(item => {
